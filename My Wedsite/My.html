@@ -1,0 +1,121 @@
+<section class="welcome-screen" id="welcomeScreen">
+    <div class="date-time" id="dateTime">
+    <div><span class="time-label">Date:</span> <span id="currentDate">Loading date...</span></div>
+    <div><span class="time-label">Time:</span> <span id="currentTime">Loading time...</span></div>
+</div>
+    <div class="cloud-card">
+        <svg class="cloud-outline" viewBox="0 0 300 190"
+             xmlns="http://www.w3.org/2000/svg"
+             aria-hidden="true">
+            <path d="M 65 150
+                     C 35 150, 25 130, 35 110
+                     C 10 85, 35 55, 65 65
+                     C 70 25, 115 15, 140 45
+                     C 165 5, 215 25, 220 60
+                     C 260 45, 285 80, 265 110
+                     C 290 140, 265 155, 240 150 Z"
+                  fill="#fff5fb"
+                  stroke="white"
+                  stroke-width="4"
+                  stroke-linejoin="round"/>
+        </svg>
+
+        <div class="cloud-text">
+            <h1>Welcome to Aadrita Pink World!!!! 🩷</h1>
+            <p>My Little World filled with a few fun things to do!♡</p>
+        </div>
+    </div>
+    <div class="greeting-card" id="greetingCard">
+        <p>♡ What should we call you? ♡</p>
+
+        <form id="nameForm">
+            <input type="text"
+                   id="visitorName"
+                   placeholder="Your lovely name..."
+                   maxlength="20"
+                   required>
+            <button type="submit">Let's go!</button>
+        </form>
+    </div>
+
+</section>
+<div class="intro-screen" id="introScreen">
+    <div class="cloud-curtain cloud-left"></div>
+    <div class="cloud-curtain cloud-right"></div>
+    <div class="intro-content">
+        <h1>♡ A little world of Fun ♡</h1>
+        <button id="startButton">Let's Play! 🎀</button>
+    </div>
+</div>
+
+<div class="welcome-photo">
+    <img id="rotatingPhoto"
+         src="Images/Pink.jpeg"
+         alt="A cute Pink Petal Club decoration">
+
+    <p>♡ Some photos I took! ♡</p>
+</div>
+
+<section class="games-section">
+    <h2>♡ Pick A Game to Play! ♡</h2>
+    <p>Here are some cute options!</p>
+
+    <div class="games-grid">
+        <button class="game-card">
+            <span>🧩</span>
+            <h3>Picture Puzzle</h3>
+        </button>
+
+        
+        <button class="surprise-card" type="button">
+            <span>🎁</span>
+            <h3>A Little Surprise</h3>
+        </button>
+
+        <button class="game-card" type="button">
+        <span>🧠</span>
+        <h3>Emoji Memory Challenge</h3>
+    </button>
+
+        <button class="game-card">
+            <span>💗</span>
+            <h3>Personality Quiz</h3>
+        </button>
+    </div>
+
+<button type="button" class="about-maker-card" id="aboutMakerCard">
+    🎀 About the Maker ♡
+    <p style="font-size:14px; font-weight:normal;">
+        A little peek at the person behind Aadrita's Pink World!
+    </p>
+</button>
+
+</section>
+
+<div class="game-window" id="gameWindow" aria-hidden="true">
+
+    <div class="game-window-card"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="gameWindowTitle">
+
+        <div class="game-window-header">
+            <h2 id="gameWindowTitle">Let's play! 🎀</h2>
+
+            <button type="button"
+                    class="exit-button"
+                    id="closeGameWindow">
+                ✕ Exit
+            </button>
+        </div>
+
+        <div class="game-window-content" id="gameWindowContent">
+            <p>Your little game is getting ready! ♡</p>
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
